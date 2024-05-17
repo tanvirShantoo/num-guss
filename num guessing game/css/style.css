@@ -1,0 +1,140 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222; /* Dark background */
+  color: #eee; /* Light text color */
+}
+
+.welcome-page,
+.game-container {
+  background-color: #333; /* Darker background for sections */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Increased box-shadow intensity */
+  max-width: 800px;
+  text-align: center;
+  animation: slideIn 0.5s ease-in-out forwards; /* Added animation */
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+@keyframes slideIn {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.start-btn{
+  padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #29f6ef;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.start-btn:hover{
+  transform: scale(1.05); /* Increase the size by 5% */
+  background-color: #36fffc; /* Darker shade of green */
+  box-shadow: 0 0 10px rgb(0, 255, 251); /* Add box shadow on hover */
+  color: #333;
+}
+
+.title {
+  font-size: 2em;
+  color: #fff; /* White text for headings */
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.2em;
+  color: #ddd; /* Light gray for descriptions */
+  margin-bottom: 20px;
+}
+
+.instructions {
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #ddd; /* Light gray for instructions */
+}
+
+.player-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.player {
+  padding: 15px;
+  border: 1px solid #444; /* Darker border for players */
+  margin: 10px;
+  text-align: center;
+  width: calc(33% - 40px);
+  background-color: #222; /* Dark background for players */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Increased box-shadow intensity */
+  color: #ddd; /* Light gray for text */
+}
+
+.player h2 {
+  margin-bottom: 10px;
+  color: #fff; /* White text for player headings */
+}
+
+.guess-message {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #fff; /* White text for guess messages */
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.attempts-left {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff; /* White text for attempts left */
+}
+
+.reset-btn {
+  background-color: #333; /* Darker background for reset button */
+  color: #eee; /* Light gray text for reset button */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px; /* Added margin for spacing */
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Added transition for hover effect */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Enhanced hover effects for buttons */
+
+.set-number-btn:hover,
+.guess-btn:hover,
+.reset-btn:hover {
+  background-color: #111; /* Darker background on hover */
+  transform: scale(1.05); /* Slight scale up on hover */
+}

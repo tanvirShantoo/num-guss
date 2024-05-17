@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game (3 Players)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="welcome-page">
+        <h1>Welcome to the <span class="rainbow-text">Number Guessing Game</span></h1>
+        <p class="description">Three players, one secret number, and a race against time! Are you ready?</p>
+        <button class="start-btn">Start Game</button>
+    </div>
+    <div class="game-container" hidden>
+        <h1 class="title">Number Guessing Game</h1>
+        <div class="instructions">
+            <p>Welcome! One player sets a secret number, and the other two try to guess it within a limited number of attempts. Good luck!</p>
+        </div>
+        <div class="player-container">
+            <div class="player setter">
+                <h2>Player 1 (Number Setter)</h2>
+                <input type="number" class="set-number" placeholder="Enter your number">
+                <button class="set-number-btn">Set Number</button>
+            </div>
+            <div class="player guesser">
+                <h2>Player 2 (Guesser)</h2>
+                <input type="number" class="guess-number" placeholder="Guess the number">
+                <button class="guess-btn">Guess</button>
+                <p class="guess-message"></p>
+                <div class="attempts-left">
+                    <span class="attempts-count">5</span> Attempts Left
+                </div>
+            </div>
+            <div class="player guesser">
+                <h2>Player 3 (Guesser)</h2>
+                <input type="number" class="guess-number" placeholder="Guess the number">
+                <button class="guess-btn">Guess</button>
+                <p class="guess-message"></p>
+                <div class="attempts-left">
+                    <span class="attempts-count">5</span> Attempts Left
+                </div>
+            </div>
+        </div>
+        <div class="status">
+            <button class="reset-btn">Reset Game</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
